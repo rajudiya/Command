@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Laminas\ServiceManager\ServiceLocatorInterface" type="Laminas\ServiceManager\ServiceManager" />
+    <preference for="Magento\Framework\Setup\LoggerInterface" type="Magento\Framework\Setup\ConsoleLogger" />
+    <type name="Magento\Framework\Console\CommandList">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="AdminUser" xsi:type="object">Custom\Command\Console\InstallData</item>
+            </argument>
+        </arguments>
+    </type>
+</config>
