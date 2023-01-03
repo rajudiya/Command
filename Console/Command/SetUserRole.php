@@ -5,7 +5,7 @@
  * @package   Salecto_Advertisment
  * @author    Salecto
  */
-namespace Custom\Command\Console;
+namespace Custom\Command\Console\Command;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;

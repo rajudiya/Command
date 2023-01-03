@@ -5,7 +5,8 @@
     <type name="Magento\Framework\Console\CommandList">
         <arguments>
             <argument name="commands" xsi:type="array">
-                <item name="AdminUser" xsi:type="object">Custom\Command\Console\InstallData</item>
+                <item name="changeRole" xsi:type="object">Custom\Command\Console\Command\SetUserRole</item>
+                <item name="AdminRole" xsi:type="object">Custom\Command\Console\Command\NewUserRole</item>
             </argument>
         </arguments>
     </type>
